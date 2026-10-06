@@ -9,8 +9,9 @@ version 0.001
 # Perl::Critic::Policy::ValuesAndExpressions::ProhibitLiteralArithmetic
 
 Arithmetic whose operands are all literal numbers computes, every time it runs,
-a value that never changes.  The reader then has to do the arithmetic to learn
-what the value is.  Write the value, with digit separators where they help:
+a value that never changes.  To make matters worse, doing this "code as documentation"
+builds an unhealthy habit which will eventually lead to a rounding/swamping error.
+Write the value, with digit separators where they help:
 
 ```perl
 my $GB = 1024 * 1024 * 1024;         # reported
