@@ -68,11 +68,6 @@ Parentheses are a structure of their own in PPI.  C<(2 + 3) * 4> is reported at
 C<2 + 3>, inside them, and not as the whole expression.  Whoever writes out
 that value writes out the whole of it anyway.
 
-An expression that spells out how a number is made, such as the expected value
-of a test that reads "physical less committed less the reserve", is reported
-too.  If the arithmetic is the documentation, say so where it is:
-C<## no critic (ProhibitLiteralArithmetic)> with the reason beside it.
-
 =cut
 
 Readonly::Scalar my $DESC => q{Arithmetic on literal numbers};

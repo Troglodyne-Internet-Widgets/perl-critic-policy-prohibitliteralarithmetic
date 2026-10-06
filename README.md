@@ -66,11 +66,6 @@ Parentheses are a structure of their own in PPI.  `(2 + 3) * 4` is reported at
 `2 + 3`, inside them, and not as the whole expression.  Whoever writes out
 that value writes out the whole of it anyway.
 
-An expression that spells out how a number is made, such as the expected value
-of a test that reads "physical less committed less the reserve", is reported
-too.  If the arithmetic is the documentation, say so where it is:
-`## no critic (ProhibitLiteralArithmetic)` with the reason beside it.
-
 ## METHODS
 
 ### supported\_parameters
@@ -82,6 +77,15 @@ too.  If the arithmetic is the documentation, say so where it is:
 ### applies\_to
 
 ### violates
+
+# BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+[https://github.com/teodesian/perl-critic-policy-prohibitliteralarithmetic/issues](https://github.com/teodesian/perl-critic-policy-prohibitliteralarithmetic/issues)
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 # AUTHORS
 
